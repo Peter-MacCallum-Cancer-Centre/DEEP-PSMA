@@ -34,6 +34,9 @@ def dice_score(mask1,mask2):
     dice_score = 2*overlap/sum
     return dice_score
 
+
+#updated methods for DEEP-PSMA grand challenge
+
 #surface dice analysis
 from SimpleITK import GetArrayViewFromImage as ArrayView
 from functools import partial
@@ -52,7 +55,6 @@ def get_surface_dice(gold,prediction):
     surface_dice=(2.*matching_surface_voxels)/(gold_surface_voxels+prediction_surface_voxels)
     return surface_dice
 
-#updated methods for DEEP-PSMA grand challenge
 def read_label(label_path):
     label=sitk.ReadImage(label_path)
     ar=sitk.GetArrayFromImage(label)
