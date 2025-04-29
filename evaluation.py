@@ -1,7 +1,7 @@
 import SimpleITK as sitk
 import numpy as np
 
-
+### TO BE UPDATED...
 ### From AutoPET Evaluation Method https://github.com/lab-midas/autoPET/blob/master/val_script.py
 import cc3d 
 def con_comp(seg_array):
