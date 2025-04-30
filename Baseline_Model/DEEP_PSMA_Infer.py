@@ -19,7 +19,7 @@ Script to run inference based on trained models. Need to run scripts 00-02 befor
 
 nn_predict_exe='nnUNetv2_predict' #if not available in %PATH update to appropriate location
 ##nn_predict_exe=r"D:\path\to\python\Scripts\nnUNetv2_predict.exe"
-nn_predict_exe=r"F:\TotalSegmentator_win\totseg_v24\Scripts\nnUNetv2_predict.exe"
+
 
 
 def expand_contract_label(label,distance=5.0):
