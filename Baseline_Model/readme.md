@@ -10,6 +10,6 @@ This method provides simple optimisations which improve the performance of nnU-N
 
 Example case with manual Total Tumour Burden (TTB) label provided (red) with derived physiological/normal VOI (blue)
 
-It is then straightforward to train an nnU-Net model for each tracer and use some simple post-processing refinements to improve the agreement with the known threshold boundaries in the vicinity of inferred tumor voxels.
+It is then straightforward to train an nnU-Net model for each tracer and use post-processing refinements to improve the agreement with the known threshold boundaries in the vicinity of inferred tumor voxels. This is of the form of an expansion of the inferred tumour label, re-threshold to the designated value, and removal of inferred normal voxels.
 
 This method does not account for matched PSMA & FDG images from the same patient. The data in this challenge is provided such that the paired PSMA and FDG PET/CT images may be used to improve the discrimination of equivocal lesions. This is one of the research questions we hope to see explored by participants in DEEP-PSMA.
