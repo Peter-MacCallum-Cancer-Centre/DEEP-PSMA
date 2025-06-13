@@ -2,7 +2,7 @@ import os
 from os.path import join,isdir
 import SimpleITK as sitk
 import shutil
-from tensorflow.keras.models import load_model
+##from tensorflow.keras.models import load_model
 import pandas as pd
 import numpy as np
 import time
